@@ -710,6 +710,9 @@ background: linear-gradient(90deg, rgba(99,151,211,1) 0%, rgba(255,255,255,1) 10
 input[type='radio']:checked{
 	position: relative;
 }
+input[type='radio']:checked + span{
+	color:#f49025;
+}
 input[type='radio']:checked:before {
 	width: 6px;
 	height: 6px;
@@ -743,7 +746,136 @@ input[type='radio']:checked:after {
 	justify-content: space-between;
 	margin-top: 10px;
 }
+.line_passenger{
+	background-color:#e4f2fb;
+	border:1px solid #ccc;
+	padding:15px;
+	margin-bottom:20px;
+}
+.line_passenger h3{
+	margin-top:0;
+	font-size:24px;
+	margin-bottom:20px;
+}
+.box_line_passenger h4{
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+	padding-bottom:5px;
+	margin:0;
+	margin-bottom:15px;
+}
+.line_passenger_info{
+	margin-top:15px;
+}
+.form_passenger{
+	border:1px solid #c4cfd6;
+	border-radius:5px;
+	height:36px;
+	width:100%;
+	padding:7px;
+}
+.info_detail_passenger label{
+	display:block;
+	margin-bottom:10px;
+}
+.box_line_passenger p{
+	margin-bottom:0;
+	margin-top:10px;
+}
+.check_passenger{
+	font-weight:400;
+}
+.check_passenger label{
+	font-weight:400;
+	color:#2861a1
+}
+.check_passenger label a{
+	text-decoration:underline;
+}
+.btn_passenger a{
+	 height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background-color: #f49025;
+    display: block;
+    min-width: 135px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+	padding:0 20px;
+}
+.btn_passenger a:hover{
+	text-decoration:none;
+	background-color:#e48219;
+}
+
+.line_table_price{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.price_box h2{
+	margin:0;
+	font-size:15px;
+	font-weight:600;
+	color:#fff;
+	background-color:#2861a1;
+	padding:15px 20px;
+}
+.table_price_box{
+	padding:15px;
+	border:1px solid #ccc;
+	border-top:none;
+	background-color:#e4f2fb;
+}
+.table_price_box hr{
+	border-color:#ccc;
+	margin:15px 0;
+}
+.price_total{
+	font-size:18px;
+	color:#f49025;
+}
+.depart_form{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding:10px 0;
+}
+.label-price{
+	background-color:#f49025;
+	font-size:14px;
+}
+.confirm_book h2{
+	font-size:24px;
+	color:#f49025;
+}
+.confirm_book h2:first-child{
+	margin-top:0;
+}
+.confirm_book h4{
+	font-size:15px;
+	color:#f49025;
+}
+.table_infomation table{
+	width:100%;
+}
+.table_infomation table td{
+	padding:5px;
+}
+.table_infomation table td:first-child{
+	width:30%;
+}
+.border_top td{
+	border-top:1px solid #ccc;
+}
+.btn_passenger{
+	margin-top:20px;
+}
 @media only screen and (min-width: 1200px) {
+	.line_passenger{
+		padding:30px 45px;
+	}
 	.row1_search{
 		width: 50%;
 	}
@@ -755,6 +887,12 @@ input[type='radio']:checked:after {
 	}	
 }
 @media only screen and (min-width: 768px) {
+	
+	.btn_passenger{
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:40px;
+	}
 	.header_detail_search{
 		display: flex;
 		justify-content: space-between;
@@ -825,6 +963,13 @@ input[type='radio']:checked:after {
 	}
 }
 @media only screen and (max-width: 767px) {
+	.btn_passenger a{
+		margin-bottom:15px;
+	}
+	.info_detail_passenger label{
+		margin-bottom:5px;
+		margin-top:10px;
+	}
 	.search_box_flight .btn_search_flight{
 		width:100%;
 	}
