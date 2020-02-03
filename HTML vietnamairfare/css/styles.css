@@ -62,6 +62,9 @@ body{
 	font-size:16px;
 	font-weight:600;
 }
+.navbar-nav>li.active>a{
+	color:#f49025;
+}
 .nav>li>a:hover, .nav>li>a:focus{
 	color:#fff;
 	background-color:rgba(0,0,0,0.2);
@@ -105,6 +108,9 @@ background: linear-gradient(90deg, rgba(99,151,211,1) 0%, rgba(255,255,255,1) 10
 	padding:15px 0;
 	min-height:109px;
 }
+.content_hotel{
+	padding-top:15px;
+}
 .line_radio_book{
 	padding-right:20px;
 }
@@ -130,6 +136,14 @@ background: linear-gradient(90deg, rgba(99,151,211,1) 0%, rgba(255,255,255,1) 10
 	outline:none;
 	padding-left:10px;
 }
+.select_full{
+	height:22px;
+	border-radius:20px;
+	width:100%;
+	border:none;
+	outline:none;
+	padding-left:10px;
+}
 .input_book .input_date{
 	font-size:12px;
 	width:30%;
@@ -138,6 +152,39 @@ background: linear-gradient(90deg, rgba(99,151,211,1) 0%, rgba(255,255,255,1) 10
 	padding:5px;
 	background: #fff url(../images/input_date.png) no-repeat;
 	background-position: 90%;
+	border:none;
+	outline:none;
+}
+.content_hotel .input_date{
+	font-size:12px;
+	width:105px;
+	border-radius:20px;
+	height:22px;
+	padding:5px;
+	background: #fff url(../images/input_date.png) no-repeat;
+	background-position: 90%;
+	border:none;
+	outline:none;
+}
+.line_tour_search .input_date{
+	font-size:12px;
+	width:100%;
+	border-radius:20px;
+	height:22px;
+	padding:5px;
+	background: #fff url(../images/input_date.png) no-repeat;
+	background-position: 90%;
+	border:none;
+	outline:none;
+}
+.input_place{
+	font-size:12px;
+	width:100%;
+	border-radius:20px;
+	height:22px;
+	padding:5px;
+	background: #fff url(../images/input_place.png) no-repeat;
+	background-position: 96%;
 	border:none;
 	outline:none;
 }
@@ -150,6 +197,9 @@ background: linear-gradient(90deg, rgba(99,151,211,1) 0%, rgba(255,255,255,1) 10
 .people_book{
 	margin-top:10px;
 	justify-content:space-between;
+}
+.content_hotel .people_book{
+	margin:15px 0;
 }
 .line_people_book span{
 	display:block;
@@ -164,9 +214,31 @@ background: linear-gradient(90deg, rgba(99,151,211,1) 0%, rgba(255,255,255,1) 10
 	min-width:45px;
 	border:none;
 }
+.line_rooom_search select{
+	border-radius:20px;
+	height:22px;
+	padding-left:7px;
+	min-width:45px;
+	border:none;
+}
+.content_hotel .line_people_book select{
+	border-radius:20px;
+	height:22px;
+	padding-left:7px;
+	min-width:105px;
+	border:none;
+}
 .line_btn_book{
 	color:#fff;
 	font-size:13px;
+}
+.content_hotel .btn_book{
+	display:block;
+	margin-top:15px;
+}
+.content_hotel .line_btn_book{
+	display:flex;
+	justify-content:flex-end;
 }
 .btn_book{
 	justify-content:space-between;
@@ -872,7 +944,279 @@ input[type='radio']:checked:after {
 .btn_passenger{
 	margin-top:20px;
 }
+.tit_room{
+	display:flex;
+	margin-top:10px;
+}
+.tit_room div{
+	width:25%;
+	font-size:11px;
+	color:#fff;
+	padding-left:10px;
+}
+.line_rooom_search{
+	display:flex;
+	margin-top:5px;
+}
+.line_rooom_search div{
+	width:25%;
+	font-size:14px;
+	color:#fff;
+	padding-left:10px;
+}
+.line_rooom_search div:first-child{
+	padding-left:0;
+}
+.line_rooom_search div select{
+	color:#000;
+}
+.tit_list_hotel h2{
+	margin:0;
+	font-size:27px;
+	font-weight:600;
+	color:#2861a1;
+}
+.filter_search{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.filter_search h4{
+	margin:0;
+	font-size:16px;
+	font-weight:400;
+	margin-left:15px;
+}
+.filter_search h4 span{
+	color:#f49025;
+}
+.filter_search div{
+	margin-left:15px;
+}
+.filter_search div select{
+	border-radius:10px;
+	height:26px;
+	border:1px solid #000;
+	font-size:16px;
+	text-transform:uppercase;
+	padding:2px;
+}
+.box_hotel{
+	position:relative;
+}
+.txt_hotel h3{
+	margin:0;
+	font-size:18px;
+	font-weight:600;
+}
+.detail_hotel{
+	margin-top:10px;
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+}
+.list_tour .detail_hotel{
+	align-items:flex-start;
+}
+.price_hotel_list{
+	text-align:right;
+}
+.old_p{
+	color:#666666;
+	text-decoration:line-through;
+}
+.old_p span{
+	display:inline-block;
+	text-decoration:none;
+	background-color:#e51f20;
+	padding:1px 10px;
+	font-size:13px;
+	border-radius:4px;
+	margin-left:3px;
+	color:#fff;
+}
+.new_p{
+	font-size:20px;
+	font-weight:600;
+	color:#f49025;
+}
+.rate_book_hotel{
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+}
+.rate_hotel{
+	background-color:#ececec;
+	padding-right:5px;
+	font-weight:600;
+	color:#f49025;
+	margin-top:10px;
+}
+.rate_hotel span{
+	display:inline-block;
+	background-color:#f49025;
+	font-weight:600;
+	padding:3px;
+	margin-right:5px;
+	color:#fff;
+}
+.btn_book_hotel{
+	height:31px;
+	background-color:#f49025;
+	display:block;
+	width:125px;
+	text-align:center;
+	line-height:31px;
+	border-radius:15px;
+	font-weight:600;
+	color:#fff;
+}
+.btn_book_hotel:hover,.btn_search_tour:hover{
+	text-decoration:none;
+	background-color:#e38827;
+	color:#fff;
+}
+.list_tour .btn_book_hotel{
+	margin-top:10px;
+}
+.box_hotel{
+	border-bottom:1px solid #ccc;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+.tit_list_hotel{
+	margin-bottom:20px;
+	padding-bottom:15px;
+	border-bottom:1px solid #ccc;
+}
+.left_content_hotel .pagination{
+	margin-top:0;
+}
+.link_tour a{
+	display:block;
+	background-color:#2861a1;
+	border-radius:4px;
+	margin-bottom:10px;
+	color:#fff;
+	font-size:16px;
+	font-weight:600;
+	text-transform:uppercase;
+	padding:5px 0;
+	padding-left:15px;
+}
+.link_tour a:hover{
+	text-decoration:none;
+	background-color:#3a75b8;
+}
+.themed_tour{
+	font-size:16px;
+	margin-top:20px;
+}
+.themed_tour h4{
+	font-weight:600;
+}
+.themed_tour li{
+	list-style:none;
+	margin-bottom:5px;
+}
+.themed_tour li a{
+	color:#000;
+}
+.time_tour{
+	color:#8d8d8d;
+}
+.line_tour_search{
+	margin-bottom:10px;
+}
+.line_tour_search label{
+	font-weight:400;
+	margin-bottom:0;
+}
+.btn_search_tour{
+	display:inline-block;
+	height: 31px;
+    background-color: #f49025;
+    width: 95px;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.line_table_price div b span{
+	display:inline-block;
+	width:70px;
+}
+.number_people{
+	margin-left:15px;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.number_people label{
+	margin-bottom:0;
+	font-weight:400;
+}
+.number_people select{
+	margin-left:5px;
+	border: 1px solid #c4cfd6;
+    border-radius: 5px;
+    height: 36px;
+    width: 85px;
+    padding: 7px;
+}
+.Departure_date{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-left:30px;
+	width:50%;
+}
+.Departure_date label{
+	margin-bottom:0;
+}
+.tit_detail_tour h2{
+	margin-top:0;
+	font-size:30px;
+	color:#2861a1
+}
+.tit_detail_tour p{
+	font-size:16px;
+}
+.detail_tour{
+	background-color:#e4f2fb;
+	border:1px solid #d9d9d9;
+	padding:20px;
+	margin-bottom:20px;
+}
+.detail_tour h3{
+	font-size:15px;
+	color:#f49025;
+	margin-top:0;
+	font-weight:600;
+	text-transform:uppercase;
+}
+.detail_tour .table td{
+	border:none;
+}
+.list_services li{
+	list-style:none;
+	display:inline-block;
+	padding:15px;
+	text-align:center;
+	padding-bottom:0;
+}
+.list_services li p{
+	margin-bottom:0;
+	padding-top:5px;
+}
 @media only screen and (min-width: 1200px) {
+	.box_hotel{
+		height:173px;
+	}
+	.room_search{
+		min-height:100px;
+	}
 	.line_passenger{
 		padding:30px 45px;
 	}
@@ -887,7 +1231,24 @@ input[type='radio']:checked:after {
 	}	
 }
 @media only screen and (min-width: 768px) {
-	
+	.tour_booking_info_line{
+		display:flex;
+		justify-content:flex-start;
+		align-items:center;
+	}
+	.img_hotel{
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	.txt_hotel{
+		margin-left:282px;
+	}
+	.tit_list_hotel{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+}
 	.btn_passenger{
 		display:flex;
 		justify-content:space-between;
@@ -963,6 +1324,43 @@ input[type='radio']:checked:after {
 	}
 }
 @media only screen and (max-width: 767px) {
+	.number_people,.Departure_date{
+		margin-left:0;
+		margin-top:10px;
+		justify-content:space-between;
+		width:100%;
+	}
+	.number_people select,.Departure_date input{
+		width:50%;
+	}
+	.Departure_date label{
+		margin:0 !important;
+	}
+	.book_home{
+		margin-top:20px;
+	}
+	.filter_search{
+		display:block;
+	}
+	.filter_search div{
+		margin-left:0;
+		display:inline-block;
+		margin-right:5px;
+	}
+	.filter_search h4{
+		margin-left:0;
+		margin-top:5px;
+	}
+	.content_hotel .people_book{
+		display:block;
+	}
+	.content_hotel .input_date{
+		width:100%;
+		background-position: 96%;
+	}
+	.content_hotel .line_people_book select{
+		width:100%;
+	}
 	.btn_passenger a{
 		margin-bottom:15px;
 	}
